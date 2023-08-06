@@ -32,9 +32,11 @@ while True:
     if user_input == "r":
         ranged_list = range_hero(user_input)
         print(ranged_list)
+        print(f'The number of heroes is {len(ranged_list)}')
     elif user_input == "m":
         melee_list = melee_hero(user_input)
         print(melee_list)
+        print(f'The number of melee heroes is {len(melee_list)}')
     elif user_input == "exit":
         break
 
