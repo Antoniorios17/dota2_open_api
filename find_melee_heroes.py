@@ -10,9 +10,9 @@ data = response.json()
 #Find the number of meele heroes dota 2 
 
 melee_counter = 0
-for heroe in data:
-    if heroe['attack_type'] == 'Melee':
-        print(heroe['id'], heroe['localized_name'], heroe['attack_type'])
+for hero in data:
+    if hero['attack_type'] == 'Melee':
+        print(hero['id'], hero['localized_name'], hero['attack_type'])
         melee_counter +=1
 
 print(f"the number of melee heroes in Dota 2 is {melee_counter}")
