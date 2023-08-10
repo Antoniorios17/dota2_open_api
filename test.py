@@ -1,14 +1,4 @@
-import requests
-import json
+from requests import get
 
-
-url = "https://api.opendota.com/api/heroes"
-
-data = requests.get(url).json()
-
-# print(data)
-
-for hero in data:
-    if "Carry" in hero['roles']:
-        print(hero['id'],hero['localized_name'])
-        
+ip = get('https://api.ipify.org').content.decode('utf8')
+print('My public IP address is: {}'.format(ip))
