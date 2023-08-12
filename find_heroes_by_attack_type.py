@@ -9,6 +9,8 @@ list_of_heroes = requests.get(url).json()
 # this function will gather the information such as name, id and attack type for all ranged heroes
 # it will return a list of list of all heroes that fit in the category
 
+
+# function to call the api and return the heroes that are range type
 def range_hero(entry):
     ranged_list = []
     if entry[0].lower() == "r":
@@ -17,6 +19,8 @@ def range_hero(entry):
                 new_hero = [hero['id'],hero['name'][14:].upper(), hero['attack_type']]
                 ranged_list.append(new_hero)
     return ranged_list
+
+#Function to call the api and return melee type heroes
 
 def melee_hero(entry):
     melee_list = []
