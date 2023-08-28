@@ -1,4 +1,6 @@
-from requests import get
+likes = 130100693
+total_views = 9293506725
 
-ip = get('https://api.ipify.org').content.decode('utf8')
-print('My public IP address is: {}'.format(ip))
+percentage=(likes/ total_views*100)
+
+print(percentage)
