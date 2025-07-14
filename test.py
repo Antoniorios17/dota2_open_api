@@ -1,6 +1,8 @@
-likes = 130100693
-total_views = 9293506725
+import requests
+import json
+import pandas as pd
 
-percentage=(likes/ total_views*100)
+url = "https://api.opendota.com/api/heroes"
 
-print(percentage)
+data = requests.get(url).json()
+print(data)
