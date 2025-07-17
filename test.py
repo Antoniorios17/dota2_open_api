@@ -9,5 +9,6 @@ data = requests.get(url).json()
 # print(data["openapi"])
 # print(data["info"])
 
-print(data.keys())
-print(data["components"].keys())
+# print(data.keys())
+# print(data["components"].keys())
+print(data["components"]["schemas"].keys())
